@@ -1,0 +1,16 @@
+{
+  "name": "download-images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "download_pokemons.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "deno": "^0.1.1"
+  }
+}
