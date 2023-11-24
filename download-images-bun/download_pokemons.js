@@ -1,6 +1,7 @@
 import path from "node:path";
 import fs from "node:fs";
 import Bun from "bun";
+
 const downloadImg = async (url, dst) => {
   try {
     const response = await fetch(url);
@@ -29,7 +30,7 @@ const checkFolder = (folder) => {
   fs.mkdirSync(folder, { recursive: true });
 };
 
-const pokemons = JSON.parse(fs.readFileSync("./pokemon.json"));
+const pokemons = JSON.parse(fs.readFileSync("../pokemons.json"));
 
 const folder = path.resolve("pokemons");
 (() => {
