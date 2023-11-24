@@ -29,7 +29,7 @@ const checkFolder = (folder) => {
   fs.mkdirSync(folder, { recursive: true });
 };
 
-const pokemons = JSON.parse(fs.readFileSync("./pokemon.json"));
+const pokemons = JSON.parse(fs.readFileSync("../pokemons.json"));
 
 const folder = path.resolve("pokemons");
 (() => {
